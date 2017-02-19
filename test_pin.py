@@ -1,0 +1,50 @@
+from machine import Pin
+from time import sleep_ms
+import esp
+
+esp.osdebug(0)
+
+
+pin_14 = Pin(14, Pin.OUT, value = 0)
+pin_12 = Pin(12, Pin.OUT, value = 0)
+pin_13 = Pin(13, Pin.OUT, value = 0)
+pin_15 = Pin(15, Pin.OUT, value = 0)
+pin_16 = Pin(16, Pin.OUT, value = 0)
+pin_5 = Pin(5, Pin.OUT, value = 0)
+pin_4 = Pin(4, Pin.OUT, value = 0)
+pin_0 = Pin(0, Pin.OUT, value = 0)
+
+
+while True:
+    pin_14.high()
+    sleep_ms(500)
+    pin_14.low()
+    sleep_ms(500)
+    pin_12.high()
+    sleep_ms(500)
+    pin_12.low()
+    sleep_ms(500)
+    pin_13.high()
+    sleep_ms(500)
+    pin_13.low()
+    sleep_ms(500)
+    pin_15.high()
+    sleep_ms(500)
+    pin_15.low()
+    sleep_ms(500)
+    pin_16.high()
+    sleep_ms(500)
+    pin_16.low()
+    sleep_ms(500)
+    pin_5.high()
+    sleep_ms(500)
+    pin_5.low()
+    sleep_ms(500)
+    pin_4.high()
+    sleep_ms(500)
+    pin_4.low()
+    sleep_ms(500)
+    pin_0.high()
+    sleep_ms(500)
+    pin_0.low()
+    sleep_ms(500)
