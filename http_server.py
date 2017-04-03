@@ -1,4 +1,3 @@
-    
 import network
 import socket
  
@@ -42,9 +41,24 @@ def start_myserver():
 #main part
 html = """<!DOCTYPE html>
 <html>
-    <head> <title>ESP8266</title> </head>
-    <body> 
-        Hello from Python web on ESP8266
+	<head>
+        <title>Control Python-bot</title>
+    </head>
+    <body>
+        <body bgcolor="#999999">
+        <h1 align="center">Python-bot Control Panel</h1>
+		<p align="center">Voor meer info over de Python-bots klik <a href="http://bertvdbroeck.weebly.com/python-bots.html" target="_blank">HIER</a></p>
+        <form>
+            <p align="center">Afstand: 
+                <input type="text" name="afstand" placeholder="Aantal stappen vb. 15, 23, ...">
+            </p>
+            <p align="center">Draaien: 
+                <input type="text" name="hoek" placeholder="Aantal graden vb. 14, 34, ...">
+            </p>
+            <p align="center">
+                <input type="submit">
+            </p>
+        </form>
     </body>
 </html>
 """
